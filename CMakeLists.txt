@@ -22,14 +22,14 @@ include_directories(
   )
 
 
-add_executable(laser_scan_matcher src/laser_scan_matcher.cpp)
+add_executable(laser_scan_matcher_node src/laser_scan_matcher.cpp)
 
-target_include_directories(laser_scan_matcher
+target_include_directories(laser_scan_matcher_node
   PRIVATE
   "include"
 )
 
-ament_target_dependencies(laser_scan_matcher
+ament_target_dependencies(laser_scan_matcher_node
   rclcpp
   sensor_msgs
   rcutils
@@ -42,7 +42,7 @@ ament_target_dependencies(laser_scan_matcher
   nav_msgs
 )
 
-install(TARGETS laser_scan_matcher DESTINATION lib/${PROJECT_NAME})
+install(TARGETS laser_scan_matcher_node DESTINATION lib/${PROJECT_NAME})
 
 
 ament_package()
