@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(ros2_laser_scan_matcher)
+project(laser_scan_matcher)
 
 find_package(ament_cmake REQUIRED)
 find_package(sensor_msgs REQUIRED)
